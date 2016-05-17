@@ -15,6 +15,8 @@
 		D15611901CEB0BD900BA83BC /* SYANewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D156118F1CEB0BD900BA83BC /* SYANewViewController.m */; };
 		D15611931CEB0BFA00BA83BC /* SYAPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D15611921CEB0BFA00BA83BC /* SYAPublishViewController.m */; };
 		D15611961CEB0C2400BA83BC /* SYAMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D15611951CEB0C2400BA83BC /* SYAMainViewController.m */; };
+		D15611991CEB0F1600BA83BC /* SYANavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D15611981CEB0F1600BA83BC /* SYANavViewController.m */; };
+		D156119C1CEB159E00BA83BC /* UIImage+SYAImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D156119B1CEB159E00BA83BC /* UIImage+SYAImage.m */; };
 		D16BDA4D1CE6EE59004BD6B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D16BDA4C1CE6EE59004BD6B8 /* Assets.xcassets */; };
 		D16BDA501CE6EE59004BD6B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D16BDA4E1CE6EE59004BD6B8 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -35,6 +37,10 @@
 		D15611921CEB0BFA00BA83BC /* SYAPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYAPublishViewController.m; sourceTree = "<group>"; };
 		D15611941CEB0C2400BA83BC /* SYAMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYAMainViewController.h; sourceTree = "<group>"; };
 		D15611951CEB0C2400BA83BC /* SYAMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYAMainViewController.m; sourceTree = "<group>"; };
+		D15611971CEB0F1600BA83BC /* SYANavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYANavViewController.h; sourceTree = "<group>"; };
+		D15611981CEB0F1600BA83BC /* SYANavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYANavViewController.m; sourceTree = "<group>"; };
+		D156119A1CEB159E00BA83BC /* UIImage+SYAImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SYAImage.h"; sourceTree = "<group>"; };
+		D156119B1CEB159E00BA83BC /* UIImage+SYAImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SYAImage.m"; sourceTree = "<group>"; };
 		D16BDA3D1CE6EE59004BD6B8 /* FML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D16BDA4C1CE6EE59004BD6B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D16BDA4F1CE6EE59004BD6B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -148,6 +154,8 @@
 			children = (
 				D15611941CEB0C2400BA83BC /* SYAMainViewController.h */,
 				D15611951CEB0C2400BA83BC /* SYAMainViewController.m */,
+				D15611971CEB0F1600BA83BC /* SYANavViewController.h */,
+				D15611981CEB0F1600BA83BC /* SYANavViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -246,6 +254,8 @@
 		D156117C1CEB0B1100BA83BC /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				D156119A1CEB159E00BA83BC /* UIImage+SYAImage.h */,
+				D156119B1CEB159E00BA83BC /* UIImage+SYAImage.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -395,8 +405,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D15611991CEB0F1600BA83BC /* SYANavViewController.m in Sources */,
 				D15611871CEB0BA600BA83BC /* SYAEssenceViewController.m in Sources */,
 				D15611841CEB0B1100BA83BC /* main.m in Sources */,
+				D156119C1CEB159E00BA83BC /* UIImage+SYAImage.m in Sources */,
 				D15611931CEB0BFA00BA83BC /* SYAPublishViewController.m in Sources */,
 				D15611961CEB0C2400BA83BC /* SYAMainViewController.m in Sources */,
 				D156118A1CEB0BBB00BA83BC /* SYAFriendTrendViewController.m in Sources */,

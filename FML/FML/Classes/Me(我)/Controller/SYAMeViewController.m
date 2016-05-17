@@ -16,22 +16,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self setupNavgationBar];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - 设置导航条内容
+- (void)setupNavgationBar
+{
+    UIBarButtonItem *itemNight = [UIBarButtonItem barButtonItemNormalImage:[UIImage imageNamed:@"mine-moon-icon"] highlightImage:nil selectImage:[UIImage imageNamed:@"mine-moon-icon-click"] target:self action:@selector(night:)];
+    UIBarButtonItem *itemSetting = [UIBarButtonItem barButtonItemNormalImage:[UIImage imageNamed:@"mine-setting-icon"] highlightImage:[UIImage imageNamed:@"mine-setting-icon-click"] selectImage:nil target:self action:@selector(setting)];
+    // 从数组中第一个元素开始,从右向左开始布局
+    self.navigationItem.rightBarButtonItems = @[itemSetting, itemNight];
+    self.navigationItem.title = @"我的关注";
+}
+#pragma mark - 导航条按钮点击的方法
+- (void)night:(UIButton *)btn
+{
+    btn.selected = !btn.selected;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)setting
+{
+   
 }
-*/
 
 @end

@@ -19,6 +19,7 @@
 		D156119C1CEB159E00BA83BC /* UIImage+SYAImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D156119B1CEB159E00BA83BC /* UIImage+SYAImage.m */; };
 		D156119F1CEB1A7800BA83BC /* SYATabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D156119E1CEB1A7800BA83BC /* SYATabBar.m */; };
 		D15611A31CEB1EFB00BA83BC /* UIView+SYAFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = D15611A21CEB1EFB00BA83BC /* UIView+SYAFrame.m */; };
+		D15611A61CEB3A1300BA83BC /* UIBarButtonItem+SYABarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D15611A51CEB3A1300BA83BC /* UIBarButtonItem+SYABarButtonItem.m */; };
 		D16BDA4D1CE6EE59004BD6B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D16BDA4C1CE6EE59004BD6B8 /* Assets.xcassets */; };
 		D16BDA501CE6EE59004BD6B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D16BDA4E1CE6EE59004BD6B8 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -48,6 +49,8 @@
 		D15611A01CEB1DEA00BA83BC /* FML.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FML.pch; sourceTree = "<group>"; };
 		D15611A11CEB1EFB00BA83BC /* UIView+SYAFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SYAFrame.h"; sourceTree = "<group>"; };
 		D15611A21CEB1EFB00BA83BC /* UIView+SYAFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SYAFrame.m"; sourceTree = "<group>"; };
+		D15611A41CEB3A1300BA83BC /* UIBarButtonItem+SYABarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+SYABarButtonItem.h"; sourceTree = "<group>"; };
+		D15611A51CEB3A1300BA83BC /* UIBarButtonItem+SYABarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+SYABarButtonItem.m"; sourceTree = "<group>"; };
 		D16BDA3D1CE6EE59004BD6B8 /* FML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D16BDA4C1CE6EE59004BD6B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D16BDA4F1CE6EE59004BD6B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -268,6 +271,8 @@
 				D156119B1CEB159E00BA83BC /* UIImage+SYAImage.m */,
 				D15611A11CEB1EFB00BA83BC /* UIView+SYAFrame.h */,
 				D15611A21CEB1EFB00BA83BC /* UIView+SYAFrame.m */,
+				D15611A41CEB3A1300BA83BC /* UIBarButtonItem+SYABarButtonItem.h */,
+				D15611A51CEB3A1300BA83BC /* UIBarButtonItem+SYABarButtonItem.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -427,6 +432,7 @@
 				D156118A1CEB0BBB00BA83BC /* SYAFriendTrendViewController.m in Sources */,
 				D156119F1CEB1A7800BA83BC /* SYATabBar.m in Sources */,
 				D15611901CEB0BD900BA83BC /* SYANewViewController.m in Sources */,
+				D15611A61CEB3A1300BA83BC /* UIBarButtonItem+SYABarButtonItem.m in Sources */,
 				D15611831CEB0B1100BA83BC /* AppDelegate.m in Sources */,
 				D156118D1CEB0BCA00BA83BC /* SYAMeViewController.m in Sources */,
 			);

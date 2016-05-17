@@ -17,6 +17,8 @@
 		D15611961CEB0C2400BA83BC /* SYAMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D15611951CEB0C2400BA83BC /* SYAMainViewController.m */; };
 		D15611991CEB0F1600BA83BC /* SYANavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D15611981CEB0F1600BA83BC /* SYANavViewController.m */; };
 		D156119C1CEB159E00BA83BC /* UIImage+SYAImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D156119B1CEB159E00BA83BC /* UIImage+SYAImage.m */; };
+		D156119F1CEB1A7800BA83BC /* SYATabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D156119E1CEB1A7800BA83BC /* SYATabBar.m */; };
+		D15611A31CEB1EFB00BA83BC /* UIView+SYAFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = D15611A21CEB1EFB00BA83BC /* UIView+SYAFrame.m */; };
 		D16BDA4D1CE6EE59004BD6B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D16BDA4C1CE6EE59004BD6B8 /* Assets.xcassets */; };
 		D16BDA501CE6EE59004BD6B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D16BDA4E1CE6EE59004BD6B8 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -41,6 +43,11 @@
 		D15611981CEB0F1600BA83BC /* SYANavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYANavViewController.m; sourceTree = "<group>"; };
 		D156119A1CEB159E00BA83BC /* UIImage+SYAImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SYAImage.h"; sourceTree = "<group>"; };
 		D156119B1CEB159E00BA83BC /* UIImage+SYAImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SYAImage.m"; sourceTree = "<group>"; };
+		D156119D1CEB1A7800BA83BC /* SYATabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYATabBar.h; sourceTree = "<group>"; };
+		D156119E1CEB1A7800BA83BC /* SYATabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYATabBar.m; sourceTree = "<group>"; };
+		D15611A01CEB1DEA00BA83BC /* FML.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FML.pch; sourceTree = "<group>"; };
+		D15611A11CEB1EFB00BA83BC /* UIView+SYAFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SYAFrame.h"; sourceTree = "<group>"; };
+		D15611A21CEB1EFB00BA83BC /* UIView+SYAFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SYAFrame.m"; sourceTree = "<group>"; };
 		D16BDA3D1CE6EE59004BD6B8 /* FML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D16BDA4C1CE6EE59004BD6B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D16BDA4F1CE6EE59004BD6B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -170,6 +177,8 @@
 		D15611701CEB0B1100BA83BC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D156119D1CEB1A7800BA83BC /* SYATabBar.h */,
+				D156119E1CEB1A7800BA83BC /* SYATabBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -247,6 +256,7 @@
 				D156117B1CEB0B1100BA83BC /* AppDelegate.m */,
 				D156117C1CEB0B1100BA83BC /* Category */,
 				D156117D1CEB0B1100BA83BC /* main.m */,
+				D15611A01CEB1DEA00BA83BC /* FML.pch */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -256,6 +266,8 @@
 			children = (
 				D156119A1CEB159E00BA83BC /* UIImage+SYAImage.h */,
 				D156119B1CEB159E00BA83BC /* UIImage+SYAImage.m */,
+				D15611A11CEB1EFB00BA83BC /* UIView+SYAFrame.h */,
+				D15611A21CEB1EFB00BA83BC /* UIView+SYAFrame.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -409,9 +421,11 @@
 				D15611871CEB0BA600BA83BC /* SYAEssenceViewController.m in Sources */,
 				D15611841CEB0B1100BA83BC /* main.m in Sources */,
 				D156119C1CEB159E00BA83BC /* UIImage+SYAImage.m in Sources */,
+				D15611A31CEB1EFB00BA83BC /* UIView+SYAFrame.m in Sources */,
 				D15611931CEB0BFA00BA83BC /* SYAPublishViewController.m in Sources */,
 				D15611961CEB0C2400BA83BC /* SYAMainViewController.m in Sources */,
 				D156118A1CEB0BBB00BA83BC /* SYAFriendTrendViewController.m in Sources */,
+				D156119F1CEB1A7800BA83BC /* SYATabBar.m in Sources */,
 				D15611901CEB0BD900BA83BC /* SYANewViewController.m in Sources */,
 				D15611831CEB0B1100BA83BC /* AppDelegate.m in Sources */,
 				D156118D1CEB0BCA00BA83BC /* SYAMeViewController.m in Sources */,
@@ -517,6 +531,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = FML/Classes/Other/FML.pch;
 				INFOPLIST_FILE = FML/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -530,6 +545,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = FML/Classes/Other/FML.pch;
 				INFOPLIST_FILE = FML/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

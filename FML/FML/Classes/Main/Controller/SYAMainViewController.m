@@ -14,16 +14,34 @@
 #import "SYAPublishViewController.h"
 #import "SYANavViewController.h"
 #import "UIImage+SYAImage.h"
+#import "SYATabBar.h"
 @interface SYAMainViewController ()
 
 @end
 
 @implementation SYAMainViewController
 
+#pragma mark - 设置tabBarItem上的字体
++ (void)load
+
+{
+    // 获取本类下的tabBarItem
+    UITabBarItem *item = [UITabBarItem appearanceWhenContainedIn:self, nil];
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    dict[NSForegroundColorAttributeName] = [UIColor blackColor];
+    [item setTitleTextAttributes:dict forState:UIControlStateSelected];
+    // 字体大小只能在正常状态下设置
+    NSMutableDictionary *norDict = [NSMutableDictionary dictionary];
+    
+    norDict[NSFontAttributeName] = [UIFont systemFontOfSize:13];
+    
+    [item setTitleTextAttributes:norDict forState:UIControlStateNormal];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // 1.添加所有子控制器
     [self setupAllChildVC];
+    [self setupTabBar];
 }
 
 #pragma mark - 添加所有子控制器
@@ -42,8 +60,8 @@
     [self setupButton:newNav title:@"新帖" normalImageName:@"tabBar_new_icon" selImageName:@"tabBar_new_click_icon"];
     [self addChildViewController:newNav];
     // 发布
-    SYAPublishViewController *publishVC = [[SYAPublishViewController alloc] init];
-    SYANavViewController *publishNav = [[SYANavViewController alloc] initWithRootViewController:publishVC];
+//    SYAPublishViewController *publishVC = [[SYAPublishViewController alloc] init];
+//    SYANavViewController *publishNav = [[SYANavViewController alloc] initWithRootViewController:publishVC];
     // 关注
     SYAFriendTrendViewController *friendTrendVC = [[SYAFriendTrendViewController alloc] init];
     SYANavViewController *friendTrendNav = [[SYANavViewController alloc] initWithRootViewController:friendTrendVC];
@@ -67,4 +85,10 @@
     VC.tabBarItem.selectedImage = [UIImage imageWithRenderImageName:selImageName];
 }
 
+#pragma mark - 自定义tabBar,替换系统tabBar
+- (void)setupTabBar
+{
+    SYATabBar *tabBar = [SYATabBar tabBar];
+    [self setValue:tabBar forKey:@"tabBar"];
+}
 @end

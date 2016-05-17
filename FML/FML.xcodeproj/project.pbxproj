@@ -7,17 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D16BDA421CE6EE59004BD6B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D16BDA411CE6EE59004BD6B8 /* main.m */; };
-		D16BDA451CE6EE59004BD6B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D16BDA441CE6EE59004BD6B8 /* AppDelegate.m */; };
+		D15611831CEB0B1100BA83BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D156117B1CEB0B1100BA83BC /* AppDelegate.m */; };
+		D15611841CEB0B1100BA83BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D156117D1CEB0B1100BA83BC /* main.m */; };
+		D15611871CEB0BA600BA83BC /* SYAEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D15611861CEB0BA600BA83BC /* SYAEssenceViewController.m */; };
+		D156118A1CEB0BBB00BA83BC /* SYAFriendTrendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D15611891CEB0BBB00BA83BC /* SYAFriendTrendViewController.m */; };
+		D156118D1CEB0BCA00BA83BC /* SYAMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D156118C1CEB0BCA00BA83BC /* SYAMeViewController.m */; };
+		D15611901CEB0BD900BA83BC /* SYANewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D156118F1CEB0BD900BA83BC /* SYANewViewController.m */; };
+		D15611931CEB0BFA00BA83BC /* SYAPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D15611921CEB0BFA00BA83BC /* SYAPublishViewController.m */; };
+		D15611961CEB0C2400BA83BC /* SYAMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D15611951CEB0C2400BA83BC /* SYAMainViewController.m */; };
 		D16BDA4D1CE6EE59004BD6B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D16BDA4C1CE6EE59004BD6B8 /* Assets.xcassets */; };
 		D16BDA501CE6EE59004BD6B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D16BDA4E1CE6EE59004BD6B8 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D156117A1CEB0B1100BA83BC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D156117B1CEB0B1100BA83BC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D156117D1CEB0B1100BA83BC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D15611851CEB0BA600BA83BC /* SYAEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYAEssenceViewController.h; sourceTree = "<group>"; };
+		D15611861CEB0BA600BA83BC /* SYAEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYAEssenceViewController.m; sourceTree = "<group>"; };
+		D15611881CEB0BBB00BA83BC /* SYAFriendTrendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYAFriendTrendViewController.h; sourceTree = "<group>"; };
+		D15611891CEB0BBB00BA83BC /* SYAFriendTrendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYAFriendTrendViewController.m; sourceTree = "<group>"; };
+		D156118B1CEB0BCA00BA83BC /* SYAMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYAMeViewController.h; sourceTree = "<group>"; };
+		D156118C1CEB0BCA00BA83BC /* SYAMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYAMeViewController.m; sourceTree = "<group>"; };
+		D156118E1CEB0BD900BA83BC /* SYANewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYANewViewController.h; sourceTree = "<group>"; };
+		D156118F1CEB0BD900BA83BC /* SYANewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYANewViewController.m; sourceTree = "<group>"; };
+		D15611911CEB0BFA00BA83BC /* SYAPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYAPublishViewController.h; sourceTree = "<group>"; };
+		D15611921CEB0BFA00BA83BC /* SYAPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYAPublishViewController.m; sourceTree = "<group>"; };
+		D15611941CEB0C2400BA83BC /* SYAMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYAMainViewController.h; sourceTree = "<group>"; };
+		D15611951CEB0C2400BA83BC /* SYAMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYAMainViewController.m; sourceTree = "<group>"; };
 		D16BDA3D1CE6EE59004BD6B8 /* FML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FML.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D16BDA411CE6EE59004BD6B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D16BDA431CE6EE59004BD6B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D16BDA441CE6EE59004BD6B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D16BDA4C1CE6EE59004BD6B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D16BDA4F1CE6EE59004BD6B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D16BDA511CE6EE59004BD6B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -34,6 +52,244 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D15611641CEB0B1100BA83BC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D15611821CEB0B1100BA83BC /* Tools */,
+				D156116D1CEB0B1100BA83BC /* Main */,
+				D15611651CEB0B1100BA83BC /* Essence(精华) */,
+				D15611691CEB0B1100BA83BC /* FriendTrend(关注) */,
+				D15611711CEB0B1100BA83BC /* Me(我) */,
+				D15611751CEB0B1100BA83BC /* New(新帖) */,
+				D156117E1CEB0B1100BA83BC /* Publish(发布) */,
+				D15611791CEB0B1100BA83BC /* Other */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D15611651CEB0B1100BA83BC /* Essence(精华) */ = {
+			isa = PBXGroup;
+			children = (
+				D15611661CEB0B1100BA83BC /* Controller */,
+				D15611671CEB0B1100BA83BC /* Model */,
+				D15611681CEB0B1100BA83BC /* View */,
+			);
+			path = "Essence(精华)";
+			sourceTree = "<group>";
+		};
+		D15611661CEB0B1100BA83BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D15611851CEB0BA600BA83BC /* SYAEssenceViewController.h */,
+				D15611861CEB0BA600BA83BC /* SYAEssenceViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D15611671CEB0B1100BA83BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D15611681CEB0B1100BA83BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D15611691CEB0B1100BA83BC /* FriendTrend(关注) */ = {
+			isa = PBXGroup;
+			children = (
+				D156116A1CEB0B1100BA83BC /* Controller */,
+				D156116B1CEB0B1100BA83BC /* Model */,
+				D156116C1CEB0B1100BA83BC /* View */,
+			);
+			path = "FriendTrend(关注)";
+			sourceTree = "<group>";
+		};
+		D156116A1CEB0B1100BA83BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D15611881CEB0BBB00BA83BC /* SYAFriendTrendViewController.h */,
+				D15611891CEB0BBB00BA83BC /* SYAFriendTrendViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D156116B1CEB0B1100BA83BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D156116C1CEB0B1100BA83BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D156116D1CEB0B1100BA83BC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D156116E1CEB0B1100BA83BC /* Controller */,
+				D156116F1CEB0B1100BA83BC /* Model */,
+				D15611701CEB0B1100BA83BC /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D156116E1CEB0B1100BA83BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D15611941CEB0C2400BA83BC /* SYAMainViewController.h */,
+				D15611951CEB0C2400BA83BC /* SYAMainViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D156116F1CEB0B1100BA83BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D15611701CEB0B1100BA83BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D15611711CEB0B1100BA83BC /* Me(我) */ = {
+			isa = PBXGroup;
+			children = (
+				D15611721CEB0B1100BA83BC /* Controller */,
+				D15611731CEB0B1100BA83BC /* Model */,
+				D15611741CEB0B1100BA83BC /* View */,
+			);
+			path = "Me(我)";
+			sourceTree = "<group>";
+		};
+		D15611721CEB0B1100BA83BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D156118B1CEB0BCA00BA83BC /* SYAMeViewController.h */,
+				D156118C1CEB0BCA00BA83BC /* SYAMeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D15611731CEB0B1100BA83BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D15611741CEB0B1100BA83BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D15611751CEB0B1100BA83BC /* New(新帖) */ = {
+			isa = PBXGroup;
+			children = (
+				D15611761CEB0B1100BA83BC /* Controller */,
+				D15611771CEB0B1100BA83BC /* Model */,
+				D15611781CEB0B1100BA83BC /* View */,
+			);
+			path = "New(新帖)";
+			sourceTree = "<group>";
+		};
+		D15611761CEB0B1100BA83BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D156118E1CEB0BD900BA83BC /* SYANewViewController.h */,
+				D156118F1CEB0BD900BA83BC /* SYANewViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D15611771CEB0B1100BA83BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D15611781CEB0B1100BA83BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D15611791CEB0B1100BA83BC /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				D156117A1CEB0B1100BA83BC /* AppDelegate.h */,
+				D156117B1CEB0B1100BA83BC /* AppDelegate.m */,
+				D156117C1CEB0B1100BA83BC /* Category */,
+				D156117D1CEB0B1100BA83BC /* main.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		D156117C1CEB0B1100BA83BC /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		D156117E1CEB0B1100BA83BC /* Publish(发布) */ = {
+			isa = PBXGroup;
+			children = (
+				D156117F1CEB0B1100BA83BC /* Controller */,
+				D15611801CEB0B1100BA83BC /* Model */,
+				D15611811CEB0B1100BA83BC /* View */,
+			);
+			path = "Publish(发布)";
+			sourceTree = "<group>";
+		};
+		D156117F1CEB0B1100BA83BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D15611911CEB0BFA00BA83BC /* SYAPublishViewController.h */,
+				D15611921CEB0BFA00BA83BC /* SYAPublishViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D15611801CEB0B1100BA83BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D15611811CEB0B1100BA83BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D15611821CEB0B1100BA83BC /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		D16BDA341CE6EE59004BD6B8 = {
 			isa = PBXGroup;
 			children = (
@@ -53,8 +309,7 @@
 		D16BDA3F1CE6EE59004BD6B8 /* FML */ = {
 			isa = PBXGroup;
 			children = (
-				D16BDA431CE6EE59004BD6B8 /* AppDelegate.h */,
-				D16BDA441CE6EE59004BD6B8 /* AppDelegate.m */,
+				D15611641CEB0B1100BA83BC /* Classes */,
 				D16BDA4C1CE6EE59004BD6B8 /* Assets.xcassets */,
 				D16BDA4E1CE6EE59004BD6B8 /* LaunchScreen.storyboard */,
 				D16BDA511CE6EE59004BD6B8 /* Info.plist */,
@@ -66,7 +321,6 @@
 		D16BDA401CE6EE59004BD6B8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D16BDA411CE6EE59004BD6B8 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -141,8 +395,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D16BDA451CE6EE59004BD6B8 /* AppDelegate.m in Sources */,
-				D16BDA421CE6EE59004BD6B8 /* main.m in Sources */,
+				D15611871CEB0BA600BA83BC /* SYAEssenceViewController.m in Sources */,
+				D15611841CEB0B1100BA83BC /* main.m in Sources */,
+				D15611931CEB0BFA00BA83BC /* SYAPublishViewController.m in Sources */,
+				D15611961CEB0C2400BA83BC /* SYAMainViewController.m in Sources */,
+				D156118A1CEB0BBB00BA83BC /* SYAFriendTrendViewController.m in Sources */,
+				D15611901CEB0BD900BA83BC /* SYANewViewController.m in Sources */,
+				D15611831CEB0B1100BA83BC /* AppDelegate.m in Sources */,
+				D156118D1CEB0BCA00BA83BC /* SYAMeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +545,7 @@
 				D16BDA561CE6EE59004BD6B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

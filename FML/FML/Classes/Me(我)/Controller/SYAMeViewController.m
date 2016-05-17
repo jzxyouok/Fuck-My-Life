@@ -7,7 +7,7 @@
 //
 
 #import "SYAMeViewController.h"
-
+#import "SYASettingViewController.h"
 @interface SYAMeViewController ()
 
 @end
@@ -36,7 +36,10 @@
 
 - (void)setting
 {
-   
+    SYASettingViewController *settingVC = [[SYASettingViewController alloc] init];
+    // push之前设置底部条隐藏
+    settingVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:settingVC animated:YES];
 }
 
 @end

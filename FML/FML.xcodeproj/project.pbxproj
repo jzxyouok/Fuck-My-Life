@@ -20,6 +20,7 @@
 		D156119F1CEB1A7800BA83BC /* SYATabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D156119E1CEB1A7800BA83BC /* SYATabBar.m */; };
 		D15611A31CEB1EFB00BA83BC /* UIView+SYAFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = D15611A21CEB1EFB00BA83BC /* UIView+SYAFrame.m */; };
 		D15611A61CEB3A1300BA83BC /* UIBarButtonItem+SYABarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D15611A51CEB3A1300BA83BC /* UIBarButtonItem+SYABarButtonItem.m */; };
+		D15611AD1CEB501800BA83BC /* SYASettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D15611AC1CEB501800BA83BC /* SYASettingViewController.m */; };
 		D16BDA4D1CE6EE59004BD6B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D16BDA4C1CE6EE59004BD6B8 /* Assets.xcassets */; };
 		D16BDA501CE6EE59004BD6B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D16BDA4E1CE6EE59004BD6B8 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -51,6 +52,8 @@
 		D15611A21CEB1EFB00BA83BC /* UIView+SYAFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SYAFrame.m"; sourceTree = "<group>"; };
 		D15611A41CEB3A1300BA83BC /* UIBarButtonItem+SYABarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+SYABarButtonItem.h"; sourceTree = "<group>"; };
 		D15611A51CEB3A1300BA83BC /* UIBarButtonItem+SYABarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+SYABarButtonItem.m"; sourceTree = "<group>"; };
+		D15611AB1CEB501800BA83BC /* SYASettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYASettingViewController.h; sourceTree = "<group>"; };
+		D15611AC1CEB501800BA83BC /* SYASettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYASettingViewController.m; sourceTree = "<group>"; };
 		D16BDA3D1CE6EE59004BD6B8 /* FML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D16BDA4C1CE6EE59004BD6B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D16BDA4F1CE6EE59004BD6B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -71,6 +74,7 @@
 		D15611641CEB0B1100BA83BC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D15611A71CEB4FDF00BA83BC /* Setting(设置) */,
 				D15611821CEB0B1100BA83BC /* Tools */,
 				D156116D1CEB0B1100BA83BC /* Main */,
 				D15611651CEB0B1100BA83BC /* Essence(精华) */,
@@ -317,6 +321,39 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		D15611A71CEB4FDF00BA83BC /* Setting(设置) */ = {
+			isa = PBXGroup;
+			children = (
+				D15611A81CEB4FDF00BA83BC /* Controller */,
+				D15611A91CEB4FDF00BA83BC /* Model */,
+				D15611AA1CEB4FDF00BA83BC /* View */,
+			);
+			path = "Setting(设置)";
+			sourceTree = "<group>";
+		};
+		D15611A81CEB4FDF00BA83BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D15611AB1CEB501800BA83BC /* SYASettingViewController.h */,
+				D15611AC1CEB501800BA83BC /* SYASettingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D15611A91CEB4FDF00BA83BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D15611AA1CEB4FDF00BA83BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D16BDA341CE6EE59004BD6B8 = {
 			isa = PBXGroup;
 			children = (
@@ -435,6 +472,7 @@
 				D15611A61CEB3A1300BA83BC /* UIBarButtonItem+SYABarButtonItem.m in Sources */,
 				D15611831CEB0B1100BA83BC /* AppDelegate.m in Sources */,
 				D156118D1CEB0BCA00BA83BC /* SYAMeViewController.m in Sources */,
+				D15611AD1CEB501800BA83BC /* SYASettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

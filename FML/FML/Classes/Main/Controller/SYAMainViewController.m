@@ -22,7 +22,7 @@
 @implementation SYAMainViewController
 
 #pragma mark - 设置tabBarItem上的字体
-+ (void)load
++ (void)initialize
 
 {
     // 获取本类下的tabBarItem

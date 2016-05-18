@@ -33,6 +33,8 @@
 		D1B6B6F51CECAE140073147B /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D1B6B6EC1CECAE130073147B /* LaunchImage@2x.png */; };
 		D1B6B6F91CECAE3A0073147B /* SYAADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B6B6F71CECAE3A0073147B /* SYAADViewController.m */; };
 		D1B6B6FA1CECAE3A0073147B /* SYAADViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1B6B6F81CECAE3A0073147B /* SYAADViewController.xib */; };
+		D1DB83D91CECB86B000B8308 /* SYANetWorkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DB83D81CECB86B000B8308 /* SYANetWorkTool.m */; };
+		D1DB83DC1CECC07E000B8308 /* SYAADItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DB83DB1CECC07E000B8308 /* SYAADItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +82,10 @@
 		D1B6B6F61CECAE3A0073147B /* SYAADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYAADViewController.h; sourceTree = "<group>"; };
 		D1B6B6F71CECAE3A0073147B /* SYAADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYAADViewController.m; sourceTree = "<group>"; };
 		D1B6B6F81CECAE3A0073147B /* SYAADViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SYAADViewController.xib; sourceTree = "<group>"; };
+		D1DB83D71CECB86B000B8308 /* SYANetWorkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYANetWorkTool.h; sourceTree = "<group>"; };
+		D1DB83D81CECB86B000B8308 /* SYANetWorkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYANetWorkTool.m; sourceTree = "<group>"; };
+		D1DB83DA1CECC07E000B8308 /* SYAADItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYAADItem.h; sourceTree = "<group>"; };
+		D1DB83DB1CECC07E000B8308 /* SYAADItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYAADItem.m; sourceTree = "<group>"; };
 		FFC6952AD205A0CCA6A3EE54 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -359,6 +365,8 @@
 		D15611821CEB0B1100BA83BC /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				D1DB83D71CECB86B000B8308 /* SYANetWorkTool.h */,
+				D1DB83D81CECB86B000B8308 /* SYANetWorkTool.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -471,6 +479,8 @@
 		D1B6B6ED1CECAE130073147B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D1DB83DA1CECC07E000B8308 /* SYAADItem.h */,
+				D1DB83DB1CECC07E000B8308 /* SYAADItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -611,6 +621,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1DB83D91CECB86B000B8308 /* SYANetWorkTool.m in Sources */,
+				D1DB83DC1CECC07E000B8308 /* SYAADItem.m in Sources */,
 				D15611991CEB0F1600BA83BC /* SYANavViewController.m in Sources */,
 				D15611871CEB0BA600BA83BC /* SYAEssenceViewController.m in Sources */,
 				D15611841CEB0B1100BA83BC /* main.m in Sources */,

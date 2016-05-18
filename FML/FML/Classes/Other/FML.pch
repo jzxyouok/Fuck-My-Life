@@ -10,6 +10,11 @@
 /******************屏幕尺寸*********************/
 #define SYAScreenW [UIScreen mainScreen].bounds.size.width
 #define SYAScreenH [UIScreen mainScreen].bounds.size.height
+
+#define iPhone6P (SYAScreenH == 736)
+#define iPhone6 (SYAScreenH == 667)
+#define iPhone5 (SYAScreenH == 568)
+#define iPhone4 (SYAScreenH == 480)
 /******************屏幕尺寸*********************/
 
 /******************UIView分类获取控件尺寸*********************/

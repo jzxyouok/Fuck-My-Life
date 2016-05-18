@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "SYAMainViewController.h"
+#import "SYAADViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -18,9 +19,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    SYAMainViewController *mainVC = [[SYAMainViewController alloc] init];
+    SYAADViewController *adVC = [[SYAADViewController alloc] init];
     
-    self.window.rootViewController = mainVC;
+    self.window.rootViewController = adVC;
     [self.window makeKeyAndVisible];
     
     

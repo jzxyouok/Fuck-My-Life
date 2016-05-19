@@ -93,6 +93,10 @@
         NSLog(@"%@",error);
     }];
 }
+
+
+
+
 #pragma mark - 点击广告调用
 - (void)tap
 {

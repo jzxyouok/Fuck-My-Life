@@ -11,8 +11,10 @@
 #import <MJExtension/MJExtension.h>
 #import "SYASubTagItem.h"
 #import "SYASubTagCell.h"
+#import <SVProgressHUD/SVProgressHUD.h>
 @interface SYASubTagViewController ()
 @property (nonatomic, strong) NSMutableArray *subTagItemArray;
+@property (nonatomic, weak) SYANetWorkTool *tool;
 @end
 
 @implementation SYASubTagViewController
@@ -33,14 +35,25 @@ static NSString * const ID = @"cell";
     [self loadData];
     [self.tableView registerNib:[UINib nibWithNibName:@"SYASubTagCell" bundle:nil] forCellReuseIdentifier:ID];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    self.tableView.backgroundColor = SYAColor(206, 206, 206);
+    //self.tableView.backgroundColor = SYAColor(206, 206, 206);
     
 }
 
+- (void)viewWillDisAppear:(BOOL)animated
+
+{
+    [super viewWillAppear:animated];
+    [SVProgressHUD dismiss];
+    // 网速慢的时候快速push pop的时候需要
+    [self.tool.tasks makeObjectsPerformSelector:@selector(cancel)];
+    
+}
 #pragma mark - 加载网络数据
 - (void)loadData
 {
+    [SVProgressHUD showWithStatus:@"正在加载数据..."];
     SYANetWorkTool *netWorkTool = [SYANetWorkTool shareNetWorkTool];
+    self.tool = netWorkTool;
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     parameters[@"a"] = @"tag_recommend";
     parameters[@"action"] = @"sub";
@@ -50,8 +63,9 @@ static NSString * const ID = @"cell";
         self.subTagItemArray = [SYASubTagItem mj_objectArrayWithKeyValuesArray:responseObject];
         
         [self.tableView reloadData];
+        [SVProgressHUD dismiss];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        //NSLog(@"%@",error);
+        [SVProgressHUD dismiss];
     }];
     
     

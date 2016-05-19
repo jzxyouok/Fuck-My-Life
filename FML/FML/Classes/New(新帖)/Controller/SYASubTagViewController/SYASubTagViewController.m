@@ -10,12 +10,13 @@
 #import "SYANetWorkTool.h"
 #import <MJExtension/MJExtension.h>
 #import "SYASubTagItem.h"
+#import "SYASubTagCell.h"
 @interface SYASubTagViewController ()
 @property (nonatomic, strong) NSMutableArray *subTagItemArray;
 @end
 
 @implementation SYASubTagViewController
-
+static NSString * const ID = @"cell";
 - (NSMutableArray *)subTagItemArray
 
 {
@@ -30,6 +31,9 @@
     [super viewDidLoad];
     self.navigationItem.title = @"推荐";
     [self loadData];
+    [self.tableView registerNib:[UINib nibWithNibName:@"SYASubTagCell" bundle:nil] forCellReuseIdentifier:ID];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.tableView.backgroundColor = SYAColor(206, 206, 206);
     
 }
 
@@ -60,9 +64,17 @@
     return self.subTagItemArray.count;
 }
 
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-//
-//{
-//
-//}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+
+{
+    SYASubTagCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    cell.subTagItem = self.subTagItemArray[indexPath.row];
+    return cell;
+}
+
+#pragma mark - 返回每个cell的高度
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 61;
+}
 @end

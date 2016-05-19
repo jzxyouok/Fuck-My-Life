@@ -10,6 +10,9 @@
 		17AF62028F114A667DA4226E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78CE24208486EB7806E7E21D /* libPods.a */; };
 		D105F04B1CEDBC5100185AE8 /* SYASubTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D105F04A1CEDBC5100185AE8 /* SYASubTagViewController.m */; };
 		D105F04E1CEDBEC400185AE8 /* SYASubTagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D105F04D1CEDBEC400185AE8 /* SYASubTagItem.m */; };
+		D105F0521CEDCD2C00185AE8 /* SYASubTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D105F0501CEDCD2C00185AE8 /* SYASubTagCell.m */; };
+		D105F0531CEDCD2C00185AE8 /* SYASubTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D105F0511CEDCD2C00185AE8 /* SYASubTagCell.xib */; };
+		D105F0561CEDD7D900185AE8 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = D105F0551CEDD7D900185AE8 /* UIColor+Hex.m */; };
 		D15611831CEB0B1100BA83BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D156117B1CEB0B1100BA83BC /* AppDelegate.m */; };
 		D15611841CEB0B1100BA83BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D156117D1CEB0B1100BA83BC /* main.m */; };
 		D15611871CEB0BA600BA83BC /* SYAEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D15611861CEB0BA600BA83BC /* SYAEssenceViewController.m */; };
@@ -46,6 +49,11 @@
 		D105F04A1CEDBC5100185AE8 /* SYASubTagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYASubTagViewController.m; sourceTree = "<group>"; };
 		D105F04C1CEDBEC400185AE8 /* SYASubTagItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYASubTagItem.h; sourceTree = "<group>"; };
 		D105F04D1CEDBEC400185AE8 /* SYASubTagItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYASubTagItem.m; sourceTree = "<group>"; };
+		D105F04F1CEDCD2C00185AE8 /* SYASubTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYASubTagCell.h; sourceTree = "<group>"; };
+		D105F0501CEDCD2C00185AE8 /* SYASubTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYASubTagCell.m; sourceTree = "<group>"; };
+		D105F0511CEDCD2C00185AE8 /* SYASubTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SYASubTagCell.xib; sourceTree = "<group>"; };
+		D105F0541CEDD7D900185AE8 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		D105F0551CEDD7D900185AE8 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		D156117A1CEB0B1100BA83BC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D156117B1CEB0B1100BA83BC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D156117D1CEB0B1100BA83BC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -318,6 +326,9 @@
 		D15611781CEB0B1100BA83BC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D105F04F1CEDCD2C00185AE8 /* SYASubTagCell.h */,
+				D105F0501CEDCD2C00185AE8 /* SYASubTagCell.m */,
+				D105F0511CEDCD2C00185AE8 /* SYASubTagCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -343,6 +354,8 @@
 				D15611A21CEB1EFB00BA83BC /* UIView+SYAFrame.m */,
 				D15611A41CEB3A1300BA83BC /* UIBarButtonItem+SYABarButtonItem.h */,
 				D15611A51CEB3A1300BA83BC /* UIBarButtonItem+SYABarButtonItem.m */,
+				D105F0541CEDD7D900185AE8 /* UIColor+Hex.h */,
+				D105F0551CEDD7D900185AE8 /* UIColor+Hex.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -572,6 +585,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1B6B6F41CECAE140073147B /* LaunchImage.png in Resources */,
+				D105F0531CEDCD2C00185AE8 /* SYASubTagCell.xib in Resources */,
 				D1B6B6F51CECAE140073147B /* LaunchImage@2x.png in Resources */,
 				D16BDA501CE6EE59004BD6B8 /* LaunchScreen.storyboard in Resources */,
 				D1B6B6F21CECAE140073147B /* LaunchImage-800-667h@2x.png in Resources */,
@@ -640,8 +654,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1DB83D91CECB86B000B8308 /* SYANetWorkTool.m in Sources */,
+				D105F0521CEDCD2C00185AE8 /* SYASubTagCell.m in Sources */,
 				D1DB83DC1CECC07E000B8308 /* SYAADItem.m in Sources */,
 				D105F04E1CEDBEC400185AE8 /* SYASubTagItem.m in Sources */,
+				D105F0561CEDD7D900185AE8 /* UIColor+Hex.m in Sources */,
 				D15611991CEB0F1600BA83BC /* SYANavViewController.m in Sources */,
 				D15611871CEB0BA600BA83BC /* SYAEssenceViewController.m in Sources */,
 				D15611841CEB0B1100BA83BC /* main.m in Sources */,

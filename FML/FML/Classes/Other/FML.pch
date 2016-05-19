@@ -32,3 +32,7 @@
 #import "UIBarButtonItem+SYABarButtonItem.h"
 
 /******************UIView分类设置BarButtonItem*********************/
+
+/******************Color分类*********************/
+#import "UIColor+Hex.h"
+/******************Color分类*********************/

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		17AF62028F114A667DA4226E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78CE24208486EB7806E7E21D /* libPods.a */; };
+		D105F04B1CEDBC5100185AE8 /* SYASubTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D105F04A1CEDBC5100185AE8 /* SYASubTagViewController.m */; };
+		D105F04E1CEDBEC400185AE8 /* SYASubTagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D105F04D1CEDBEC400185AE8 /* SYASubTagItem.m */; };
 		D15611831CEB0B1100BA83BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D156117B1CEB0B1100BA83BC /* AppDelegate.m */; };
 		D15611841CEB0B1100BA83BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D156117D1CEB0B1100BA83BC /* main.m */; };
 		D15611871CEB0BA600BA83BC /* SYAEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D15611861CEB0BA600BA83BC /* SYAEssenceViewController.m */; };
@@ -40,6 +42,10 @@
 /* Begin PBXFileReference section */
 		3BFACED1F87781CC4930CD34 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		78CE24208486EB7806E7E21D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D105F0491CEDBC5100185AE8 /* SYASubTagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYASubTagViewController.h; sourceTree = "<group>"; };
+		D105F04A1CEDBC5100185AE8 /* SYASubTagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYASubTagViewController.m; sourceTree = "<group>"; };
+		D105F04C1CEDBEC400185AE8 /* SYASubTagItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYASubTagItem.h; sourceTree = "<group>"; };
+		D105F04D1CEDBEC400185AE8 /* SYASubTagItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYASubTagItem.m; sourceTree = "<group>"; };
 		D156117A1CEB0B1100BA83BC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D156117B1CEB0B1100BA83BC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D156117D1CEB0B1100BA83BC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -116,6 +122,15 @@
 				78CE24208486EB7806E7E21D /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D105F0481CEDBC1F00185AE8 /* SYASubTagViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D105F0491CEDBC5100185AE8 /* SYASubTagViewController.h */,
+				D105F04A1CEDBC5100185AE8 /* SYASubTagViewController.m */,
+			);
+			path = SYASubTagViewController;
 			sourceTree = "<group>";
 		};
 		D15611641CEB0B1100BA83BC /* Classes */ = {
@@ -284,6 +299,7 @@
 		D15611761CEB0B1100BA83BC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D105F0481CEDBC1F00185AE8 /* SYASubTagViewController */,
 				D156118E1CEB0BD900BA83BC /* SYANewViewController.h */,
 				D156118F1CEB0BD900BA83BC /* SYANewViewController.m */,
 			);
@@ -293,6 +309,8 @@
 		D15611771CEB0B1100BA83BC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D105F04C1CEDBEC400185AE8 /* SYASubTagItem.h */,
+				D105F04D1CEDBEC400185AE8 /* SYASubTagItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -623,6 +641,7 @@
 			files = (
 				D1DB83D91CECB86B000B8308 /* SYANetWorkTool.m in Sources */,
 				D1DB83DC1CECC07E000B8308 /* SYAADItem.m in Sources */,
+				D105F04E1CEDBEC400185AE8 /* SYASubTagItem.m in Sources */,
 				D15611991CEB0F1600BA83BC /* SYANavViewController.m in Sources */,
 				D15611871CEB0BA600BA83BC /* SYAEssenceViewController.m in Sources */,
 				D15611841CEB0B1100BA83BC /* main.m in Sources */,
@@ -635,6 +654,7 @@
 				D1B6B6F91CECAE3A0073147B /* SYAADViewController.m in Sources */,
 				D15611901CEB0BD900BA83BC /* SYANewViewController.m in Sources */,
 				D15611A61CEB3A1300BA83BC /* UIBarButtonItem+SYABarButtonItem.m in Sources */,
+				D105F04B1CEDBC5100185AE8 /* SYASubTagViewController.m in Sources */,
 				D15611831CEB0B1100BA83BC /* AppDelegate.m in Sources */,
 				D156118D1CEB0BCA00BA83BC /* SYAMeViewController.m in Sources */,
 				D15611AD1CEB501800BA83BC /* SYASettingViewController.m in Sources */,

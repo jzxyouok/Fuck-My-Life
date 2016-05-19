@@ -17,6 +17,10 @@
 #define iPhone4 (SYAScreenH == 480)
 /******************屏幕尺寸*********************/
 
+/******************基本URL*********************/
+#define SYABaseUrl @"http://api.budejie.com/api/api_open.php"
+/******************基本URL********************/
+
 /******************UIView分类获取控件尺寸*********************/
 
 #import "UIView+SYAFrame.h"

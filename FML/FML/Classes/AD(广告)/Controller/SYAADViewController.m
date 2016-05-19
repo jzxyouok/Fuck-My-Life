@@ -72,7 +72,7 @@
     SYANetWorkTool *netTool = [SYANetWorkTool shareNetWorkTool];
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     parameters[@"code2"] = SYACode2;
-    [netTool GET:@"http://mobads.baidu.com/cpro/ui/mads.php" parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [netTool sya_GET:@"http://mobads.baidu.com/cpro/ui/mads.php" parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSDictionary *adDict = [responseObject[@"ad"] firstObject];
         
         self.item = [SYAADItem mj_objectWithKeyValues:adDict];

@@ -7,7 +7,7 @@
 //
 
 #import "SYANewViewController.h"
-
+#import "SYASubTagViewController.h"
 @interface SYANewViewController ()
 
 @end
@@ -30,6 +30,7 @@
 - (void)tag
 
 {
-    NSLog(@"tag");
+    SYASubTagViewController *subTagVC = [[SYASubTagViewController alloc] init];
+    [self.navigationController pushViewController:subTagVC animated:YES];
 }
 @end
